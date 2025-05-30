@@ -1,0 +1,14 @@
+import CarList from "../../components/templates/CarList";
+import carsData from "../../data/carsData"
+
+function Suv() {
+    const suvCars = carsData.filter((car) => car.category === "suv");
+    console.log(suvCars)
+  return (
+    <div>
+        <CarList data={suvCars}/>
+    </div>
+  )
+}
+
+export default Suv
